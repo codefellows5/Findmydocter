@@ -1,0 +1,247 @@
+html
+{
+ height:100%;
+}
+
+body
+{
+  height:100%;
+  width:100%;
+  
+}
+
+*
+{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+.form_container
+{
+  height:100%;
+  width:100%;
+  background-position:center;
+  background-size:cover;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.form_container .form_body
+{
+  height:500px;
+  width:500px;
+  position: absolute; 
+  background-color: #f2f2f2;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  box-shadow: 4px 4px 5px -1px #4ddbff,
+           -4px -4px 5px -1px #e6faff;
+}
+
+.form_container .button-box
+{
+  width:200px;
+  position: absolute;
+  top:50px;
+  box-shadow: 0 0 10px 3px #e6ffff;
+  border-radius:30px;
+}
+
+.form_container .toggle-btn
+{
+  width:49%;
+  padding:10px;
+  cursor:pointer;
+  background: transparent;
+  border:0;
+  outline:none;
+  position: relative;
+  text-align: center;
+  outline-style: transparent;
+  font-weight:bolder;
+}
+
+.form_container #login_button
+{
+  color:white;
+  outline-style: transparent;
+}
+
+.form_container #register_button
+{
+  color:black;
+  outline-style: transparent;
+}
+
+.form_container #btn
+{
+  top:0;
+  left:0;
+  position: absolute;
+  width:50%;
+  height:100%;
+  background: linear-gradient(to right, #3366ff, #00ccff);
+  border-radius:30px;
+  transition: .5s;
+}
+
+.form_container .input_group
+{
+  margin-top:100px;
+  position:absolute;
+  width:80%;
+  transition: .5s;
+}
+
+.form_container .input_field
+{
+  width:100%;
+  padding:10px 5px;
+  margin: 5px 0;
+  border-left:0;
+  border-top:0;
+  border-right:0;
+  border-bottom:1px solid #999;
+  outline:none;
+  background: transparent;  
+}
+
+::placeholder, span
+{
+  color:#000;
+  opacity:0.8;
+
+}
+
+.form_container .submit_btn
+{
+  width:60%;
+  padding: 10px 30px;
+  margin:30px auto;
+  cursor: pointer;
+  display: block;
+  background: linear-gradient(to right, #3366ff, #00ccff);
+  border:0;
+  outline:none;
+  border-radius:30px;
+  color:white;
+  font-weight:bolder;
+}
+
+.form_container .check_box
+{
+  margin:30px 10px 30px 0;
+}
+
+.form_container span
+{
+  font-size:12px;
+}
+
+.form_container #login_form
+{
+ left:10%;
+}
+
+.form_container #register_form
+{
+  left:110%;
+}
+
+.form_container #forgot_form
+{
+  left:-110%;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius:10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  overflow:hidden;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+.close {
+  color: white;
+  float: right;
+  
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 10px;
+  background-color: #3366ff;
+  color: white;
+}
+
+.modal-body 
+{
+  padding: 20px;
+}
+
+
+
+@media screen and (max-width: 600px) 
+{
+  .form_container .form_body 
+  {
+    width:80%;
+    height:80%;
+  }
+}
+
+
+
+
+
+
